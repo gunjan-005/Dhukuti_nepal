@@ -56,78 +56,71 @@
           </div>
 
 <!-- products -->
-          <section class="products-section">
-            <div class="section-header">
-                <h2>About Our Products</h2>
-                <div class="underline">
-                  <p class="subheading">Handcrafted, Authentic, & Timeless Creations</p>
-                </div>
-            <div class="product-grid">
-              <div class="product-card">
-                <div class="product-img-container">
-                <img src="images/prayer.jpg" alt="Prayer Wheels">
-                </div>
-                <h3>Prayer Wheels</h3>
-                <p>Handcrafted with intricate detail, used for peace and spiritual blessings.</p>
-              </div>
-              <div class="product-card">
-                <div class="product-img-container">
-                <img src="images/lachha.jpg" alt="Woolen Braids">
-                </div>
-                <h3>Woolen Braids</h3>
-                <p>Traditional handmade woolen braids worn during festivals and rituals.</p>
-              </div>
-              <div class="product-card">
-                <div class="product-img-container">
-                <img src="images/puppets.webp" alt="Nepali Puppet">
-                </div>
-                <h3>Nepali Puppet</h3>
-                <p>Beautifully painted wooden puppets reflecting local art and folklore.</p>
-              </div>
-              <div class="product-card">
-                <div class="product-img-container">
-                <img src="images/green-tea.jpeg" alt="Pure Himalayan Green Tea">
-                </div>
-                <h3>Pure Himalayan Green Tea</h3>
-                <p>Refreshing, antioxidant-rich tea from the hills of Nepal.</p>
-              </div>
-              <div class="product-card">
-                <div class="product-img-container">
-                <img src="images/yonjan.jpeg" alt="Homemade Radish Pickle">
-                </div>
-                <h3>Homemade Radish Pickle</h3>
-                <p>Spicy and tangy radish pickle made with traditional Nepali herbs.</p>
-              </div>
-              <div class="product-card">
-                <div class="product-img-container">
-                <img src="images/body-soap.jpeg" alt="Natural Herbal Soap">
-                </div>
-                <h3>Natural Herbal Soap</h3>
-                <p>Handcrafted soap with Himalayan herbs for gentle, natural cleansing.</p>
-              </div>
-              <div class="product-card">
-                <div class="product-img-container">
-                <img src="images/flat.jpg" alt="Bamboo Baskets">
-                </div>
-                <h3>Bamboo Baskets</h3>
-                <p>Eco-friendly, multipurpose baskets handwoven by local artisans.</p>
-              </div>
-              <div class="product-card">
-                <div class="product-img-container">
-                <img src="images/pashmina2.jpg" alt="Pashmina">
-                </div>
-                <h3>Pashmina</h3>
-                <p>Colorful, handwoven fabric representing Nepali heritage and style.</p>
-              </div>
-              <div class="product-card">
-                <div class="product-img-container">
-                <img src="images/sing.jpg" alt="Singing Bowl">
-                </div>
-                <h3>Singing Bowl</h3>
-                <p>Used for meditation and healing, made with ancient Himalayan craftsmanship.</p>
-              </div>
-            </div>
-          </section>
+<section class="products-section">
+  <div class="section-header">
+      <h2>Featured Products</h2>
+      <div class="underline">
+      </div>
+  <div class="product-grid">
+    <div class="product-card">
+      <div class="product-img-container">
+        <img src="images/pashmina2.jpg" alt="Pashmina">
+        </div>
+        <h3>Pashmina</h3>
+        <p>Colorful, handwoven fabric representing Nepali heritage and style.</p>
+      
+    </div>
+    <div class="product-card">
+      <div class="product-img-container">
+        <img src="images/sing.jpg" alt="Singing Bowl">
+        </div>
+        <h3>Singing Bowl</h3>
+        <p>Used for meditation and healing, made with ancient Himalayan craftsmanship.</p>
+      
+    </div>
+    <div class="product-card">
+      <div class="product-img-container">
+        <img src="images/yonjan.jpeg" alt="Homemade Radish Pickle">
+        </div>
+        <h3>Homemade Radish Pickle</h3>
+        <p>Spicy and tangy radish pickle made with traditional Nepali herbs.</p>
+      
+    </div>
+     
+  </div>
+</section>
+
+<section class="products-section2">
+  <div class="section-header2">
+    <h2>Latest Products</h2>
+    <div class="underline2"></div>
+  </div>
+  <div class="product-grid">
+    <div class="product-card">
+      <div class="product-img-container">
+        <img src="images/body-soap.jpeg" alt="Natural Herbal Soap">
+      </div>
+      <h3>Natural Herbal Soap</h3>
+      <p>Gentle, handmade soap with natural ingredients for healthy skin.</p>
+    </div>
+
+    <div class="product-card">
+      <div class="product-img-container">
+        <img src="images/flat.jpg" alt="Bamboo Basket">
+      </div>
+      <h3>Bamboo Basket</h3>
+      <p>Eco-friendly and durable baskets woven from natural bamboo.</p>
+    </div>
+
+    <div class="product-card">
+      <div class="product-img-container">
+        <img src="images/puppets.webp" alt="Nepali Puppet">
+      </div>
+      <h3>Nepali Puppet</h3>
+      <p>Beautifully painted wooden puppets reflecting local folklore.</p>
+    </div>
+  </div>
+</section>
           <!-- Trigger Buttons -->
 
 <!-- Login Modal -->
@@ -169,13 +162,15 @@
     <form action="backend/buyer_register.php" method="POST">
   <input type="text" name="fullname" placeholder="Full Name" required>
   <input type="email" name="email" placeholder="Email" required>
-  <input type="password" name="password" placeholder="New Password" required>
-  <input type="password" name="cpassword" placeholder="Re-enter Password" required>
   <input type="text" name="contact_number" placeholder="Contact Number" required>
   <input type="text" name="esewa_account" placeholder="eSewa ID" required>
+  <input type="password" name="password" placeholder="New Password" required>
+  <input type="password" name="cpassword" placeholder="Re-enter Password" required>
 
   <button type="submit" name="buyer-register">Sign up</button>
 </form>
+  </div>
+</div>
 
 
 <!-- Seller Signup Modal -->
@@ -184,8 +179,12 @@
     <a href="#" class="close">&times;</a>
     <h2>Sign Up</h2>
     <form>
-      <input type="text" placeholder="Full Name" required>
+      <input type="text" placeholder="Business Name" required>
+      <input type="text" placeholder="Business Address" required>
       <input type="email" placeholder="Email" required>
+      <input type="number" placeholder="Phone Number" required>
+      <input type="text" name="esewa_account" placeholder="eSewa ID" required>
+      <input type="number" placeholder="PAN Number" required>
       <input type="password" placeholder="New Password" required>
       <input type="password" placeholder="Re-enter Password" required>
       <button type="submit">Register</button>

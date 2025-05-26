@@ -60,7 +60,7 @@
 
 .search-bar button {
   padding: 8px 15px;
-  background-color: #8B0000;
+  background-color: #7f5d3b;
   color: white;
   border: none;
   cursor: pointer;
@@ -84,7 +84,7 @@ a{
 
 .hero {
   position: relative;
-  height: 90vh;
+  height: 85vh;
   width: 100%;
   overflow: hidden;
 }
@@ -137,17 +137,17 @@ a{
   }
   .category-bar {
     position: absolute;
-    
+    bottom: 0;
+    left: 0;
     width: 100%;
     background-color: #f4c98d;
     padding: 40px 0;
     display: flex;
     justify-content: center;
-    z-index: 3;
+    z-index: -1;
     box-shadow: 0 -4px 10px rgba(0,0,0,0.1); /* Optional shadow for separation */
 
   }
-  
   
   
   .category-bar ul {
@@ -171,52 +171,52 @@ a{
 
   }
   
-  .products-section{
-    padding: 150px;
+  .products-section {
+    padding: 180px 150px 30px 150px; /* top 80px, right/left 150px, bottom 50px */
+    margin-bottom: 0; /* remove 100px bottom margin */
     max-width: 1200px;
-    margin: 0px auto 100px auto;
-    
+    margin-left: auto;
+    margin-right: auto;
     background-color: #f4c98d;
     position: relative;
     z-index: 1;
-    
   }
+  
+  
   
   
   .section-header {
     text-align: center;
     margin-bottom: 40px;
     position: relative;
-    top: -70px; /* Shifts the header a little up */
+    top: -80px; /* Shifts the header a little up */
   }
   .section-header h2 {
-    font-size: 2.5em;
-    color: #b45c00;
-    margin-bottom: 10px;
+    font-size: 2em;
+  text-align: center;
+  margin-bottom: 10px; /* controls space below the heading */
+  color: #b45c00;
   }
   .underline {
     width: 160px;       /* Adjust width as needed */
     height: 4px;
     background: #b45c00;
-    margin: 0px auto 20px auto;  /* Centered with spacing below */
+    margin: 0px auto 30px auto;  /* Centered with spacing below */
   }
   
-  /* Style for the subheading below the underline */
-  .subheading {
-    font-size: 1em;
-    color: #555;
-  }
+  
   
   .product-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 95px;
+    margin-top: 80px;
   }
   
   .product-card {
     background-color: #ffe0b2;
     border-radius: 12px;
-    padding: 20px;
+    padding: 30px;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     transition: transform 0.5s ease;
@@ -233,6 +233,7 @@ a{
     height: 200%;
     object-fit: cover; /* Keeps the image nicely cropped */
     display: block;
+    
   }
   
   
@@ -248,14 +249,101 @@ a{
   }
   
   .product-card h3 {
-    margin-top: 15px;
+    margin-top: 10px;
     color: #d2691e;
   }
   
   .product-card p {
     font-size: 0.95em;
     color: #5d4037;
+    margin-top: 10px;
+    
   }
+  /*latest product*/
+   
+  .products-section2 {
+    padding: 50px 150px 190px 150px; /* smaller top padding */
+    max-width: 1200px;
+    margin: 0 auto 100px auto;
+    background-color: #f4c98d;
+    position: relative;
+    z-index: 1;
+  }
+
+  .section-header2 {
+    margin-bottom: 20px; /* reduce space below header */
+    position: relative;
+    top: -40px; /* was -80px */
+  }
+  .section-header2 h2 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #b45c00;
+  }
+  
+  .underline2 {
+    width: 160px;       /* Adjust width as needed */
+    height: 4px;
+    background: #b45c00;
+    margin: 0px auto 30px auto;  /* Centered with spacing below */
+  }
+  
+  /* Style for the subheading below the underline */
+  
+  
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 95px;
+    margin-top: 80px;
+  }
+  
+  .product-card {
+    background-color: #ffe0b2;
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.5s ease;
+  }
+  .product-card:hover {
+    transform: translateY(-10px);
+  }
+  .product-img-container {
+    width: 100%;
+    height: 300px; /* Fixed height for all images */
+    overflow: hidden;
+    border-radius: 8px;
+  }
+  
+  .product-img-container img {
+    width: 100%;
+    height: 200%;
+    object-fit: cover; /* Keeps the image nicely cropped */
+    display: block;
+    
+  }
+  
+  .product-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .product-card h3 {
+    margin-top: 10px;
+    color: #d2691e;
+  }
+  
+  .product-card p {
+    font-size: 0.95em;
+    color: #5d4037;
+    margin-top: 10px;
+    
+  }
+  
   /* Modal Background */
 
 .modal {
